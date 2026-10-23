@@ -1,0 +1,169 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="pratica-09-inicio" id="pratica-09-inicio">
+    <mxGraphModel dx="1477" dy="1497" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="240" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DZokytoSS1I3FBxxuIBf-73" edge="1" parent="1" source="cliente" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="DZokytoSS1I3FBxxuIBf-62">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="185" y="-337.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="cliente" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="unidade" vertex="1">
+          <mxGeometry height="124" width="250" x="60" y="-690" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente.codigo" parent="cliente" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;&lt;u&gt;codigo&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="250" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente.nome" parent="cliente" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="nome" vertex="1">
+          <mxGeometry height="30" width="250" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="cliente.telefone" parent="cliente" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="endereco" vertex="1">
+          <mxGeometry height="30" width="250" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="pedido" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="entregador" vertex="1">
+          <mxGeometry height="94" width="270" x="660" y="-680" as="geometry" />
+        </mxCell>
+        <mxCell id="pedido.numero" parent="pedido" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="&lt;b&gt;PK codigo&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="270" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="pedido.data_hora" parent="pedido" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="nome" vertex="1">
+          <mxGeometry height="30" width="270" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="produto" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="item_pedido" vertex="1">
+          <mxGeometry height="154" width="260" x="380" y="-130" as="geometry" />
+        </mxCell>
+        <mxCell id="produto.codigo" parent="produto" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="PK, FK pedido_numero" vertex="1">
+          <mxGeometry height="30" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="produto.nome" parent="produto" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="PK, FK produto_codigo" vertex="1">
+          <mxGeometry height="30" width="260" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="produto.preco_tabela" parent="produto" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="quantidade NOT NULL" vertex="1">
+          <mxGeometry height="30" width="260" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-1" parent="produto" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="preco_cobrado NOT NULL" vertex="1">
+          <mxGeometry height="30" width="260" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-39" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="unidade_produto" vertex="1">
+          <mxGeometry height="124" width="250" x="380" y="340" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-40" parent="DZokytoSS1I3FBxxuIBf-39" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="&lt;b&gt;PK, FK unidade_codigo&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="250" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-41" parent="DZokytoSS1I3FBxxuIBf-39" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="PK, FK produto_codigo" vertex="1">
+          <mxGeometry height="30" width="250" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-42" parent="DZokytoSS1I3FBxxuIBf-39" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="quantidade_estoque" vertex="1">
+          <mxGeometry height="30" width="250" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-74" edge="1" parent="1" source="DZokytoSS1I3FBxxuIBf-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;defaultLabelBackgroundColor=page;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="produto.codigo">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="175" y="-80" />
+              <mxPoint x="340" y="-80" />
+              <mxPoint x="340" y="-81" />
+            </Array>
+            <mxPoint x="170" y="-50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-43" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="cliente" vertex="1">
+          <mxGeometry height="124" width="250" x="50" y="-240" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-44" parent="DZokytoSS1I3FBxxuIBf-43" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="&lt;b&gt;PK codigo&amp;nbsp;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="30" width="250" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-45" parent="DZokytoSS1I3FBxxuIBf-43" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="nome" vertex="1">
+          <mxGeometry height="30" width="250" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-46" parent="DZokytoSS1I3FBxxuIBf-43" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="telefone" vertex="1">
+          <mxGeometry height="30" width="250" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-50" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="produto" vertex="1">
+          <mxGeometry height="124" width="250" x="380" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-51" parent="DZokytoSS1I3FBxxuIBf-50" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="&lt;b&gt;PK&lt;/b&gt;&amp;nbsp;&amp;nbsp;&lt;u&gt;codigo&lt;/u&gt;" vertex="1">
+          <mxGeometry height="30" width="250" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-52" parent="DZokytoSS1I3FBxxuIBf-50" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="nome" vertex="1">
+          <mxGeometry height="30" width="250" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-53" parent="DZokytoSS1I3FBxxuIBf-50" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="preco_tabela" vertex="1">
+          <mxGeometry height="30" width="250" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-56" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(1,1)" vertex="1">
+          <mxGeometry height="30" width="60" x="180" y="-390" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-61" parent="1" style="swimlane;fontStyle=1;childLayout=stackLayout;horizontal=1;startSize=34;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;marginBottom=0;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="pedido" vertex="1">
+          <mxGeometry height="184" width="260" x="370" y="-394" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-62" parent="DZokytoSS1I3FBxxuIBf-61" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="PK numero" vertex="1">
+          <mxGeometry height="30" width="260" y="34" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-63" parent="DZokytoSS1I3FBxxuIBf-61" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="data_hora" vertex="1">
+          <mxGeometry height="30" width="260" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-64" parent="DZokytoSS1I3FBxxuIBf-61" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="FK cliente_código" vertex="1">
+          <mxGeometry height="30" width="260" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-65" parent="DZokytoSS1I3FBxxuIBf-61" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="FK entrega_código" vertex="1">
+          <mxGeometry height="30" width="260" y="124" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-72" parent="DZokytoSS1I3FBxxuIBf-61" style="text;html=1;align=left;verticalAlign=middle;spacingLeft=6;strokeColor=#6c8ebf;fillColor=#ffffff;" value="FK unidade_codigo" vertex="1">
+          <mxGeometry height="30" width="260" y="154" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-66" edge="1" parent="1" source="pedido.data_hora" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;" target="DZokytoSS1I3FBxxuIBf-62">
+          <mxGeometry relative="1" x="-0.1064" as="geometry">
+            <Array as="points">
+              <mxPoint x="795" y="-352.5" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-67" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(1,n)" vertex="1">
+          <mxGeometry height="30" width="60" x="730" y="-400" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-68" edge="1" parent="1" source="DZokytoSS1I3FBxxuIBf-65" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.465;entryY=0.032;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="produto">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-69" edge="1" parent="1" source="DZokytoSS1I3FBxxuIBf-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.479;entryY=1.017;entryDx=0;entryDy=0;entryPerimeter=0;defaultLabelBackgroundColor=page;" target="DZokytoSS1I3FBxxuIBf-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-71" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;defaultLabelBackgroundColor=page;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="505" y="252" as="sourcePoint" />
+            <mxPoint x="505" y="338" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-75" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(0,n)" vertex="1">
+          <mxGeometry height="30" width="60" x="640" y="-350" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-76" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(0,n)" vertex="1">
+          <mxGeometry height="30" width="60" x="300" y="-340" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-77" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(1,n)" vertex="1">
+          <mxGeometry height="30" width="60" x="170" y="-110" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-78" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(1,1)" vertex="1">
+          <mxGeometry height="30" width="60" x="490" y="-210" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-80" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(1,n)" vertex="1">
+          <mxGeometry height="30" width="60" x="490" y="-160" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-81" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(1,1)" vertex="1">
+          <mxGeometry height="30" width="60" x="500" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-82" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(0,n)" vertex="1">
+          <mxGeometry height="30" width="60" x="490" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-83" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(1,1)" vertex="1">
+          <mxGeometry height="30" width="60" x="500" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="DZokytoSS1I3FBxxuIBf-84" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="(0,n)" vertex="1">
+          <mxGeometry height="30" width="60" x="500" y="310" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
